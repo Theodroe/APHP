@@ -1,0 +1,7 @@
+# Site Settings
+locale                   : "kr-KO"
+title                    : "APHP"
+description              : "An assigment website."
+url                      : https://theodroe.github.io
+baseurl                  : /APHP
+repository               : #https://github.com/Theodroe/APHP
