@@ -1,0 +1,80 @@
+/* 클래스 스타일 */
+.expl
+{
+  background-color: tomato;
+  color: azure;
+  border: 2px solid white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.menu1
+{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 130px;
+  height: 140px;
+  background-color:  #333333;
+  border: 1px solid white;
+
+  padding: 20px;
+  margin: 20px;
+}
+
+.menu2 
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 130px;
+  height: 140px;
+  background-color:  #333333;
+  border: 1px solid white;
+
+  padding: 20px;
+  margin: 20px;
+}
+  .main
+  {
+    border: 3px solid white; 
+    padding: 20px;
+    margin: 20px;
+  }
+  
+.comp
+{
+  background-color: #8D8D8D;
+  text-align: center;
+  color : black;
+  font-family: Helvetica;
+  border: 2px solid white;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+.u2 
+{
+   list-style-type: none;
+  background-color: #8D8D8D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.u2 li 
+{
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.u2 li a 
+{
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  color: black;
+}

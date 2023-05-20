@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* 전체 body 스타일 */
+body 
+{
+    text-align: center;
+    background-color: black;
+}
+
+/* 텍스트 스타일*/
+
+/*제목 스타일 */
+h1
+{
+    text-align: center;
+    color: white;
+    font-size: 300%; 
+    font-family: verdana;
+    border: 10px solid white;
+}
+
+h2
+{
+    text-align: center;
+    color: white;
+    font-size: 250%; 
+    font-family: verdana;
+    border: 10px solid white;
+}
+
+/* 본문 스타일 */
+p, a, pre 
+{
+    text-align: center;
+    color: white;
+    font-family: Courier;
+}
+
+/* 텍스트 스타일 끝*/
+
+/* 메뉴 스타일 */
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li 
+{
+  float: left;
+}
+
+li a 
+{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.dropbtn 
+{
+  display: inline-block;
+  padding: 14px 16px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn 
+{
+  background-color: goldenrod;
+}
+     
+li.dropdown 
+{
+  display: inline-block;
+}
+
+.dropdown-content 
+{
+  display: none;
+  position: absolute; 
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+           
+}
+
+.dropdown-content a 
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; 
+  text-align: left;
+}
+
+.dropdown-content a:hover 
+{
+  background-color: goldenrod;
+}
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}

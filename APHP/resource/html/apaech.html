@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge content= IE=edge,chrome = 1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/class.css">
+
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="../../main.html">Main</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./definition.html">Definition</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn" onclick="alert('dropdown 메뉴입니당.\n각 버튼을 누르면 이동합니다.')">APHP</a>
+            <div class="dropdown-content" >
+              <a href="./apaech.html">Apaech</a>
+              <a href="./PHP.html">PHP</a>
+            </div>
+        </li>
+
+    </ul>
+
+    <br>
+
+    <div class="menu1"> 
+        <a href="#index">0. 목차</a>
+        <br>
+        <a href="#download">1. 다운로드</a>
+        <br>
+        <a href="#maintenece">2. 파일 수정</a>
+        <br>
+        <a href="#sd">3. cmd로 설치</a>
+        <br>
+        <a href="#test">4. 테스트</a>
+        <br>
+      </ul>
+      </div>
+
+  <div class="comp" id="index">
+    <h1> ☆ 본격 Apache 다운-로-드 ☆ </h1>
+    <br>
+    <img src="../img/Speedwagon.jpg" alt="스피-도- 와간">
+    <br>
+    <p>그 전에 다들 VS vode는 받고 왔을거라고 믿습니다.</p>
+    <a href="https://code.visualstudio.com/" target="_blank">VS code 다운 링크</a>
+    <div>
+      <p>다음은 목차입니다.</p>
+      <ul class="u2">
+        <li<a href="#index">0. 목차</a></li>
+        <li><a href="#download">1. 다운로드</a></li>
+        <li><a href="#maintenece">2. 파일 수정</a></li>
+        <li><a href="#sd">3. cmd로 설치</a></li>
+        <li><a href="#test">4. 테스트</a></li>
+      </ul>
+    </div>
+    <br>
+
+  </div>
+  <br>
+<div class="comp">
+  <h2 id="download">1. 다운로드</h2>
+  <p>어파치를 사용하기 위해서는 우선 어파치를 다운 받아야 합니다.</p>
+  
+  <a href="http://www.apachelounge.com/download/" target="_blank">어파치 다운 링크</a>
+  <br>
+  <p>이것은 apache의 다운로드 링크입니다. </p>
+  <br>
+  <p>링크를 열었다면 다음과 같은 화면이 보일겁니다.</p>
+  <img src="../img/apc/ap1.PNG" alt="ap1" style="width: 50%;">
+  <p>파란 원을 안의 링크를 누르면 자동으로 다운로드가 시작됩니다.</p>
+  <p>안정성이 걱정된다면 바로 전 버전을 받도록 합시다.</p>
+  <img src="../img/apc/ap2.PNG" alt="ap2">
+  <p>압축을 풀어줍니다.</p>
+  <p>특정 파일만 옮기면 되니 (그게 더 편함) 바탕화면에 풀어줍니다.</p>
+  <img src="../img/apc/a3.PNG" alt="ap3">
+  <p>아래 보이는 것 만 C로 옮깁니다.</p>
+  <img src="../img/apc/ap4.PNG" alt="ap4">
+  <p>이러면 기본 다운로드는 끝이 납니다.</p>
+  <img src="../img/goood.png" alt="good">
+</div>
+
+<div class="comp">
+  <h2 id="maintenece">2. 파일 수정</h2>
+  <p>이제 C로 옮겼으니 파일을 수정해야 합니다.</p>
+  <p>우선 아래의 conf폴더를 찾습니다.</p>
+  <img src="../img/apc/apd1.PNG" alt="apd1">
+  <p>우린 이 파일을 수정할 겁니다.</p>
+  <img src="../img/apc/apd2.PNG" alt="apd2">
+  <p>물론 VScode로 할 것임.</p>
+  <img src="../img/apc/apd3.PNG" alt="apd4">
+  <p>crt + F4 기술로 ServerRoot를 찾습니다.</p>
+  <img src="../img/apc/apd4.PNG" alt="apd4">
+  <p>여기서 왜 Apache파일만 옮기는 지 알 수 있는데,</p>
+  <img src="../img/apc/apd5.PNG" alt="apd5">
+  <p>아마 저것 때문일 것임.</p>
+  <p>각설하고 밑에 걸 고쳐봅시다.</p>
+  <p>ServerRoot "${SRVROOT}"를 ServerRoot "c:/Apache24"로 바꿔줍시다.</p>
+  <img src="../img/apc/apd6.PNG" alt="apd6">
+  <p>전과 마찬가지로 ServerName을 찾아줍시다.</p>
+  <img src="../img/apc/apd7.PNG" alt="apd7">
+  <p>주석 해제 후 localhsot로 바꿔줍니다.</p>
+  <img src="../img/apc/apd8.PNG" alt="apd4">
+  <p>Listen이 80인지 확인합니다.(아니라면 바꿔줍니다.)</p>
+  <p>클라이언트의 http 요청을 수신하는 웹서버의 포트 80 이라는 뜻입니다.</p>
+  <img src="../img/apc/apd9.PNG" alt="apd9">
+  <p>DocumentRoot(index.html이 저장되는 위치)를 c:/Apache24/htdocs로 바꿉니다.</p>
+  <img src="../img/apc/apd10.PNG" alt="apd10">
+  <p>이걸로 기본 준비는 끝났습니다.</p>
+  <br>
+</div>
+
+<div class="comp">
+  <h2 id="sd">3. cmd로 설치</h2>
+  <p>이제 기본 준비는 모두 끝났으니 서버에서 Apache를 받아줍시다.</p>
+  <br>
+  <p>그럼 cmd를 "관리자 권한"으로 실행해 줍니다.</p>
+  <img src="../img/apc/apsd1.PNG" alt="apsd1">
+  <p>cd c:\Apache24\bin 을 입력합니다.(바이너러 폴더로 이동)</p>
+  <img src="../img/apc/apsd2.PNG" alt="apsd2">
+  <p>아파치 서비스(데몬)을 설치합니다.(httpd.exe -k install)</p>
+  <img src="../img/apc/apsd3.PNG" alt="apsd3">
+  <p>bin 폴더에서 ApacheMonitor를 실행합니다.</p>
+  <img src="../img/apc/apsd4.PNG" alt="apsd4">
+  <p>여기서 ApacheMonitor와 똑같은 그림을 선택 후 start를 누릅니다.</p>
+  <img src="../img/apc/apsd5.PNG" alt="apsd5">
+
+</div>
+
+<div class="comp">
+  <h2 id="test">4. 테스트</h2>
+  <p>다운로드, 실행이 완료되었으니, 테스트를 해 봅니다.</p>
+  <br>
+  <p>http://127.0.0.1에 접속 해 봅니다.</p>
+  <a href="http://127.0.0.1" target="_blank">실행 링크</a>
+  <br>
+  <img src="../img/apc/test.PNG" alt="work">
+  <p>이러면 Apache 다운로드와 설정, 실행이 완료된 것입니다.</p>
+  <img src="../img/easssy.jpg" alt="">
+  <br>
+</div>
+</body>
+
+</html>
